@@ -5,6 +5,7 @@ app = Flask(__name__)
 
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
+print("BOT_TOKEN lu :", BOT_TOKEN[:6] + "..." if BOT_TOKEN else "Non défini")
 
 @app.route("/<discord_id>")
 def avatar_redirect(discord_id):
