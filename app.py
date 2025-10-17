@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 
-BOT_TOKEN = "your bot token here"
+BOT_TOKEN = "MTQyODYzODQ0NjYxMTU5OTQ1MA.G3TvYv.86fp2uAW7nMIq_e6hpEu-tHqkimjwJ6WNWn0G8"
 
 @app.route("/<discord_id>")
 def avatar_redirect(discord_id):
@@ -28,3 +28,4 @@ def avatar_redirect(discord_id):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
+
