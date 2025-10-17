@@ -1,5 +1,6 @@
 from flask import Flask, redirect
 import requests
+import os
 
 app = Flask(__name__)
 
@@ -29,3 +30,4 @@ def avatar_redirect(discord_id):
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
+
